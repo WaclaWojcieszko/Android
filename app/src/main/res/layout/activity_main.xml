@@ -1,19 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher" />
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="Tu jest jakiś tekst"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-</FrameLayout>
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_column="0"
+                android:checked="false"
+                android:text="Opcja 1" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="Opcja 2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_column="0"
+                android:checked="false"
+                android:text="Opcja 3" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="Opcja 4" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anuluj" />
+
+    </LinearLayout>
+
+</RelativeLayout>
