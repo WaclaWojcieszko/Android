@@ -1,76 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal">
+    android:orientation="vertical">
 
-    <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="wrap_content"
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_centerInParent="true">
+        android:layout_weight="0"
+        android:text="TextView" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="@dimen/rozmiar_tekstu_duży"
+        android:text="TextView"
+        android:textIsSelectable="true"/>
 
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_column="0"
-                android:checked="false"
-                android:text="Opcja 1" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rozmiar_tekstu_średni"
+        android:layout_weight="0"
+        android:text="TextView" />
 
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_column="1"
-                android:checked="false"
-                android:text="Opcja 2" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_column="0"
-                android:checked="false"
-                android:text="Opcja 3" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_column="1"
-                android:checked="false"
-                android:text="Opcja 4" />
-        </TableRow>
-
-
-    </TableLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rozmiar_tekstu_mały"
+        android:layout_weight="0"
+        android:text="TextView" />
 
     <LinearLayout
-        android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tableLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-5dp"
+        android:layout_weight="0"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK" />
+            android:layout_weight="1"
+            android:text="Duży" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anuluj" />
-
+            android:layout_weight="1"
+            android:text="Mały" />
     </LinearLayout>
 
-</RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0" >
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+</LinearLayout>
