@@ -43,4 +43,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/unitedstatesofbutton" />
 
+    <Button
+        android:text="OK"
+        style="@style/ButtonStyle"
+        android:background="@drawable/gradient" />
+
 </LinearLayout>
